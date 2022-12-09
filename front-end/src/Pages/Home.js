@@ -30,7 +30,7 @@ const Home = () =>{
                     <br/><br/><br/>
                     <li className="li">
                         <NavLink to='/dashboard'>
-                            <img title="Consultar Dasboard"  src="images/dashboard.png" alt="ícone um dashboard"/> Dasboard <img src="images/seta-direita.png" alt="ícone uma seta para a direita"/>
+                            <img title="Consultar Dasboard"  src="images/dashboard.png" alt="ícone um dashboard"/> Dashboard <img src="images/seta-direita.png" alt="ícone uma seta para a direita"/>
                         </NavLink>
                     </li>
                     <li className="li">

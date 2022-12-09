@@ -17,14 +17,18 @@
 
 .tela .ul{
     margin-top: 25%;
+    opacity: 0.7;
 }
 
 .tela .ul .li{
     margin-bottom: 10%;
+
+    
 }
 
 .tela .ul .li-usuario img{
     margin-top: 40%;
+
 }
 
 .menu-lateral-closed{

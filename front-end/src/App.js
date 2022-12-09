@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './Pages/Home';
 import Tabela from './Pages/Tabela';
-import Dashboard from './Pages/Dasboard';
+import Dashboard from './Pages/Dashboard';
 import Inicial from './Pages/Inicial';
 
 
