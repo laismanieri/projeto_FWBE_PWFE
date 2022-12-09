@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.div{
+    font-family: 'Dancing Script', cursive;
+    margin: 25px;
+}
+
+.thead{
+    font-size: 15px;
+}
+
+.thead .th, 
+.thead .td {
+    border-radius: 7px;
+    border-collapse: collapse;
+    text-align: center; 
+    background-color: #dcc89c; 
+    color: #6b1f1c;
+}
+
+.thead .td {
+    display: flex;
+    align-items: center;
+}
+
+.tbody .td{
+    border-radius: 7px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2; 
+    color:#6b1f1c}
+
+
+.tr {
+    text-align: center;
+    background-color:#e9dec1;
+    text-align: center;
+    color:#6b1f1c;
+    border-radius: 10px;
+}
+
+.botaoAdiciona{
+    margin-bottom: 20px;
+    color: #6b1f1c;
+    background-color: #dcc89c;
+    border:none;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.botao{
+    background-color: #dcc89c;
+    border: none;
+    cursor: pointer;
+    color: #6b1f1c; 
+    width: 50px;
+    border:none;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.botao:hover{
+    color: #fbf4f4;
+    background-color: #cbb77b;
+}
+
+.botao img {
+    width: 70%;
+}
+
+.botaoEdita{
+    background-color: #dcc89c;
+    border: none;
+    cursor: pointer;
+    color: #6b1f1c; 
+    width: 50px;
+    border:none;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.botaoEdita:hover{
+    color: #fbf4f4;
+    background-color: #cbb77b;
+}
+
+.botaoEdita img {
+    width: 75%;
+}
+
+

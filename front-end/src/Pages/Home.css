@@ -1,0 +1,108 @@
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.tela{
+    /* display: grid; */
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to top, #c4a96a, 
+    #efebdf);
+    /* grid-column: 1fr 4fr; */
+}
+
+.tela .ul{
+    margin-top: 25%;
+}
+
+.tela .ul .li{
+    margin-bottom: 10%;
+}
+
+.tela .ul .li-usuario img{
+    margin-top: 40%;
+}
+
+.menu-lateral-closed{
+    width: 7%;
+    background-color: whitesmoke;
+    ;
+    
+}
+
+.menu-lateral-open{
+    width: 25%;
+    background-color: whitesmoke;
+}
+
+
+.display{
+    width: 100%;
+}
+
+.ul a{
+    text-decoration: none;
+    color: #6b1f1c;
+    font-size: large;
+}
+
+.arrow{
+    border: none;
+}
+
+
+.menu-lateral-closed .ul .li-cadastro img{
+    width: 70%;
+    margin-right: 25%;
+    margin-top: 50%;
+}
+
+.menu-lateral-closed .ul .li-usuario img
+{
+    width: 70%;
+    margin-right: 25%;
+    margin-top: 200%;
+}
+
+.menu-lateral-closed .ul .li {
+    font-size: large;
+    margin-right: 30px;
+    margin-top: 20%;
+}
+
+.menu-lateral-closed .ul .li h2
+{
+    font-size: large;
+    margin-right: 1%;
+
+}
+
+.menu-lateral-closed .ul .li .sair{
+    margin-right: 1%;
+    margin-top: 3%;
+}
+
+.div-images{
+    margin-top: 10%;
+    display: flex;
+    margin-bottom: 0%;
+}
+
+.div-images img{
+    display: flex;
+    width: 33.2%;
+}
+
+.div-icons{
+    margin-top: 7%;
+}
+
+.div-icons img{
+    margin: 2% 6% 0 5%;
+}
+
+

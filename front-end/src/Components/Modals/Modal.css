@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Dancing Script', cursive;
+    color:#6b1f1c;
+}
+
+
+
+.cadastro{
+    width: 700px;
+    border-radius: 5px;
+    background-color: #cbb77b;
+}
+
+
+.form {
+    padding: 30px;
+}
+
+.form2 {
+    padding: 5px;
+}
+
+.form div{ 
+    padding: 10px;
+}
+
+.form2 div  { 
+    padding: 2px;
+}
+.form label, .form2 label {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.input,
+.select {
+  font-size: inherit;
+}
+
+.input:focus::-webkit-input-placeholder {
+color: transparent;
+}
+
+.input:focus:-moz-placeholder { /* Firefox 18- */
+color: transparent;  
+}
+
+.input:focus::-moz-placeholder {  /* Firefox 19+ */
+color: transparent;  
+}
+
+.input:focus:-ms-input-placeholder {  
+color: transparent;  
+}
+
+.form div .input, .form2 div .input,
+.form .select, .form2 .select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  margin-bottom: 3px;
+}
+
+.form .input, .select, .form2 .input{
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: #464646;
+}
+
+
+.form .enviar, 
+.form2 .enviar{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #e3cd8a;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: #6b1f1c;
+}
+
+.form2 .enviar:hover{
+    width: 100%;
+    color: #fbf4f4;
+    background-color: #cbb77b;
+}
+
+.form .enviar:hover{
+    width: 100%;
+    color: #fbf4f4;
+    background-color: #cbb77b;
+}
+
+.form-botao{
+    display: flex;
+    
+ }
+
+ .form-botao div{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    
+ }
+
+.button{
+    border-radius: 20px;
+    border: none;
+}

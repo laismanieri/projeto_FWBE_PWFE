@@ -1,0 +1,5 @@
+package br.senai.sp.cadastro.restservicecors;
+
+public class GreetingController {
+
+}

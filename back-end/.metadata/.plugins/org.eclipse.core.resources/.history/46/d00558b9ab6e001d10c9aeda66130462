@@ -1,0 +1,57 @@
+package br.senai.sp.cadastro.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.senai.sp.cadastro.dao.CadastroDao;
+import br.senai.sp.cadastro.model.Cadastro;
+
+@RestController
+@RequestMapping("/cliente")
+public class CadastroController {
+	
+	@Autowired
+	CadastroDao dao;
+	
+	@GetMapping
+	public List<Cadastro> buscaTodos() {
+		return dao.listarTodos();	
+	}
+	
+	@GetMapping("/{id}")
+	public Cadastro buscaPorId(@PathVariable int id) {
+		return dao.pegarPorId(id);
+	}
+	
+	@PostMapping
+	public Cadastro inserir(@RequestBody Cadastro cadastro) {
+		dao.novo(cadastro);
+		return cadastro;
+	}
+	
+	@PutMapping("/{id}")
+	public Cadastro alterar(@RequestBody Cadastro cadastro, @PathVariable int id) {
+		dao.editar(cadastro, id);
+				
+		return cadastro;
+	}
+
+	@DeleteMapping("/{id}")
+	public int excluir(@PathVariable int id) {
+		
+		dao.deletar(id);
+		
+		return id;
+	}
+	
+}
+

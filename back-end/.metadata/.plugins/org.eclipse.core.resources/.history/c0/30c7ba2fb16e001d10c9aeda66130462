@@ -1,0 +1,89 @@
+package br.senai.sp.cadastro.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import br.senai.sp.cadastro.model.Cliente;
+
+@Repository
+public class ClienteDao {
+	
+    @Autowired
+    JdbcTemplate  jdbcTemplate;
+
+	public List<Cliente> listarTodos() {
+	    String sql = "SELECT id, nome, cpf, email, telefone, dataNascimento, genero, estadoCivil, profissao, preco FROM cliente";
+	     
+	    List<Cliente> lista = jdbcTemplate.query(sql,
+	                BeanPropertyRowMapper.newInstance(Cliente.class));
+
+		return lista;
+	}
+	
+	
+	public Cliente pegarPorId(int id) {
+		
+	    String sql = "SELECT id, nome, cpf, email, telefone, dataNascimento, genero, estadoCivil, profissao FROM cliente WHERE id=?";
+	    
+		Object[] params = {id};
+	    
+		Cliente produto = jdbcTemplate.queryForObject(sql,
+	        BeanPropertyRowMapper.newInstance(Cliente.class), params);
+	    
+		return produto;
+	}
+	
+	public Integer novo(Cliente cliente) {
+		
+        String sql = "INSERT INTO cliente (nome, cpf, email, telefone, dataNascimento, genero, estadoCivil, profissao) "
+        		+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        int result = jdbcTemplate.update(sql, 
+        		cliente.getNome(),
+        		cliente.getCpf(),
+        		cliente.getEmail(),
+        	    cliente.getTelefone(),
+        	    cliente.getDataNascimento(),
+        	    cliente.getGenero(),
+        	    cliente.getEstadoCivil(),        	  	
+        	    cliente.getProfissao()
+        		);
+		
+		return result;
+	}
+	
+	public int editar(Cliente cliente, int id) {
+		String sql = "UPDATE cliente SET nome=?, cpf=?, email=?, telefone=?, dataNascimento=?, genero=?, estadoCivil=?, profissao=? WHERE id=?";
+		
+	    Object[] params = {
+	    		cliente.getNome(),
+        		cliente.getCpf(),
+        		cliente.getEmail(),
+        	    cliente.getTelefone(),
+        	    cliente.getDataNascimento(),
+        	    cliente.getGenero(),
+        	    cliente.getEstadoCivil(),        	  	
+        	    cliente.getProfissao(), 
+        	    id};
+	    
+	    int result = jdbcTemplate.update(sql, params);
+	     
+		return result;
+	}
+	
+	public int deletar(int id) {
+		
+		String sql = "DELETE FROM cliente WHERE id=?";
+		
+		Object[] params = {id};
+		
+		int result = jdbcTemplate.update(sql, params);
+		
+		return result;
+	}
+	
+	
+}
