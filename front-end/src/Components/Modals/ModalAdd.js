@@ -30,7 +30,7 @@ const ModalAdd = (props) =>{
 
   const cadastraCliente = () => {
 
-    let url ='http://localhost:8084/cliente';
+    let url ='http://localhost:8080/cliente';
     fetch(url, {
       method: 'POST',
       headers: {

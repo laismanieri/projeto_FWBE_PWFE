@@ -11,7 +11,7 @@ import ModalEdit from '../Components/Modals/ModalEdit';
 
 const deletaCliente = id => {
     console.log(id)
-    let url = `http://localhost:8084/cliente/${id}`;
+    let url = `http://localhost:8080/cliente/${id}`;
     fetch(url,            
         {method: 'DELETE'
          })
@@ -32,7 +32,7 @@ const Tabela = () => {
     const [idcliente,setIDcliente] = useState();
 
     useEffect(() =>{
-        let url ='http://localhost:8084/cliente';
+        let url ='http://localhost:8080/cliente';
         
 
         fetch(url

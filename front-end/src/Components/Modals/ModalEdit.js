@@ -31,7 +31,7 @@ const ModalEdit = (props) =>{
 
   const editaCliente = () => {
 
-    let url = `http://localhost:8084/cliente/${props.idItem}`;
+    let url = `http://localhost:8080/cliente/${props.idItem}`;
     fetch(url, {
       method: 'PUT',
       headers: {
@@ -62,7 +62,7 @@ const ModalEdit = (props) =>{
 
   
     useEffect(() =>{
-        let url =`http://localhost:8084/cliente/${props.idItem}`;
+        let url =`http://localhost:8080/cliente/${props.idItem}`;
               
         fetch(url) 
             .then((response) => response.json())
