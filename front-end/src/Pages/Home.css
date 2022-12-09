@@ -48,6 +48,11 @@
     width: 100%;
 }
 
+.display h1{
+    margin-top: 5%;
+}
+
+
 .ul a{
     text-decoration: none;
     color: #6b1f1c;
@@ -91,7 +96,7 @@
 }
 
 .div-images{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     margin-bottom: 0%;
 }
@@ -101,12 +106,10 @@
     width: 33.2%;
 }
 
-.div-icons{
-    margin-top: 7%;
-}
+
 
 .div-icons img{
-    margin: 2% 6% 0 5%;
+    margin: 5% 6% 0 5%;
 }
 
 
