@@ -51,7 +51,7 @@ const Home = () =>{
                 </ul>
             </div>
             <div className='display'>
-                <h1 >Seja Bem-vindo(a)</h1>
+                <h1 ></h1>
                 <Outlet></Outlet>
 
             </div>

@@ -96,7 +96,7 @@ const ModalEdit = (props) =>{
                 <div>
                   <label>Id:</label></div>
                 <div>
-                    <input value={props.idItem} className='input' type="number" pla/>
+                    <input value={props.idItem} className='input' type="number"/>
                 </div>
             </div>
             

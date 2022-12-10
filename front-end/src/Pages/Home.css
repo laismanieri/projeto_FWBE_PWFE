@@ -10,7 +10,7 @@
     width: 100%;
     height: 100vh;
     font-family: 'Dancing Script', cursive;
-    background: linear-gradient(to top, #c4a96a, 
+    background: linear-gradient(to top, #cbbb93, 
     #efebdf);
     /* grid-column: 1fr 4fr; */
 }
@@ -96,7 +96,7 @@
 }
 
 .div-images{
-    margin-top: 5%;
+    margin-top: 15%;
     display: flex;
     margin-bottom: 0%;
 }
