@@ -29,6 +29,11 @@ const Home = () =>{
                     </li>
                     <br/><br/><br/>
                     <li className="li">
+                        <NavLink to='/search'>
+                            <img title="Consultar Dasboard"  src="images/pesquisa-de-lupa.png" alt="ícone um dashboard"/> Pesquisa <img src="images/seta-direita.png" alt="ícone uma seta para a direita"/>
+                        </NavLink>
+                    </li>
+                    <li className="li">
                         <NavLink to='/dashboard'>
                             <img title="Consultar Dasboard"  src="images/dashboard.png" alt="ícone um dashboard"/> Dashboard <img src="images/seta-direita.png" alt="ícone uma seta para a direita"/>
                         </NavLink>
@@ -51,9 +56,7 @@ const Home = () =>{
                 </ul>
             </div>
             <div className='display'>
-                <h1 ></h1>
                 <Outlet></Outlet>
-
             </div>
             
         </div>

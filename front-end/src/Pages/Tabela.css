@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fontsgoogleapiscom/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-.div{
+div{
     font-family: 'Dancing Script', cursive;
     margin: 25px;
 }
 
-.thead{
+thead{
     font-size: 15px;
 }
 
-.thead .th, 
-.thead .td {
+thead th, 
+thead td {
     border-radius: 7px;
     border-collapse: collapse;
     text-align: center; 
@@ -18,12 +18,12 @@
     color: #6b1f1c;
 }
 
-.thead .td {
+thead td {
     display: flex;
     align-items: center;
 }
 
-.tbody .td{
+tbody td{
     border-radius: 7px;
 }
 
@@ -32,7 +32,7 @@ tr:nth-child(even){
     color:#6b1f1c}
 
 
-.tr {
+tr {
     text-align: center;
     background-color:#e9dec1;
     text-align: center;
@@ -40,17 +40,17 @@ tr:nth-child(even){
     border-radius: 10px;
 }
 
-.botaoAdiciona{
+botaoAdiciona{
     margin-bottom: 20px;
     color: #6b1f1c;
     background-color: #dcc89c;
     border:none;
     background-color:transparent;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 08;
 }
 
-.botao{
+botao{
     background-color: #dcc89c;
     border: none;
     cursor: pointer;
@@ -59,19 +59,19 @@ tr:nth-child(even){
     border:none;
     background-color:transparent;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 07;
 }
 
-.botao:hover{
+botao:hover{
     color: #fbf4f4;
     background-color: #cbb77b;
 }
 
-.botao img {
+botao img {
     width: 70%;
 }
 
-.botaoEdita{
+botaoEdita{
     background-color: #dcc89c;
     border: none;
     cursor: pointer;
@@ -80,16 +80,16 @@ tr:nth-child(even){
     border:none;
     background-color:transparent;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 07;
 }
 
-.botaoEdita:hover{
+botaoEdita:hover{
     color: #fbf4f4;
     background-color: #cbb77b;
     
 }
 
-.botaoEdita img {
+botaoEdita img {
     width: 75%;
 }
 

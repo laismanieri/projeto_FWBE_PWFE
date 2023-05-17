@@ -9,6 +9,7 @@ import Home from './Pages/Home';
 import Tabela from './Pages/Tabela';
 import Dashboard from './Pages/Dashboard';
 import Inicial from './Pages/Inicial';
+import Search from './Pages/Search';
 
 
 
@@ -18,10 +19,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element = {<Home/>} path='/' exact>
-            <Route element = {<Dashboard/>} path='/dashboard'/>
+            
             <Route element = {<Tabela/>} path='/tabela'/>
             <Route element = {<Inicial/>} path='/'/>
           </Route>
+          <Route element = {<Dashboard/>} path='/dashboard'></Route>
+          <Route element = {<Search/>} path='/search'></Route>
         </Routes>
       </BrowserRouter>
 

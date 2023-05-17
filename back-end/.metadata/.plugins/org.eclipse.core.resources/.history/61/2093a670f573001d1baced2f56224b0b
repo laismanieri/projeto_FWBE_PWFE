@@ -1,7 +1,0 @@
-spring.datasource.url=jdbc:mysql://localhost:3306/CadastroCliente
-spring.datasource.username=root
-spring.datasource.password=@Grecia21
-
-server.port=8081
-
-Access-Control-Allow-Origin: http://localhost:3000
